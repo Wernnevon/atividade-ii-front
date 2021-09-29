@@ -6,18 +6,7 @@ function Related() {
         <h3>Artist name</h3>
         <p>description</p>
       </div>
-      <div>
-        <h3>Artist name</h3>
-        <p>description</p>
-      </div>
-      <div>
-        <h3>Artist name</h3>
-        <p>description</p>
-      </div>
-      <div>
-        <h3>Artist name</h3>
-        <p>description</p>
-      </div>
+      
     </div>
   );
 }

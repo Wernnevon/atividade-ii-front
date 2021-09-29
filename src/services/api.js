@@ -1,15 +1,9 @@
 import axios from "axios";
 
-const ApiUrl = "http://localhost:3001/";
+export const init = () => axios.create()
 
-export const getArtist = (artistId) => axios.create({
-    baseUrl: `${ApiUrl}/artista/${artistId}`
-});
+export const getArtist = () => axios.create({baseURL: "http://localhost:3001/"});
 
-export const getArtistRelated = (artistId) => axios.create({
-    baseUrl: `${ApiUrl}/artistasRelacionados/${artistId}`
-});
+export const getArtistRelated = () => axios.create({baseURL: "http://localhost:3001/"});
 
-export const findArtist = (artistName) => axios.create({
-    baseUrl: `${ApiUrl}/artistas/${artistName}`
-});
+export const findArtist = () => axios.create({baseURL: "http://localhost:3001/"});

@@ -1,12 +1,15 @@
+import {useEffect} from "react";
+import {init} from "./services/api";
 import './App.css';
 import Artist from './pages/artist';
-import Related from './pages/related';
 
 function App() {
+  useEffect(()=>{
+    init().get("http://localhost:3001/");
+  },[])
   return (
     <div className="App">
       <Artist/>
-      <Related/>
     </div>
   );
 }
